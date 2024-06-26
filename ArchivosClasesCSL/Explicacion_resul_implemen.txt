@@ -1,0 +1,33 @@
+
+## Valores de Pérdida (Pérdida):
+
+Linera_loss: 
+1.0320887698413223e-07: El valor es extremadamente pequeño, en notación científica (e-07). 
+Esto indica que el modelo de regresión lineal (sin regularización) se ajusta prácticamente a la perfección a los datos de prueba. 
+Sin embargo, este valor puede indicar un posible sobreajuste en los datos de entrenamiento.
+
+## Lasso_Loss: 0.06832940807010227: 
+El valor es mayor que el de la regresión lineal. Indica que el modelo Lasso tiene un rendimiento ligeramente inferior al modelo de regresión 
+lineal en términos de ajuste a los datos de prueba. 
+Este valor se considera razonable y puede estar generalizando mejor.
+
+## Ridge Loss: 0.008008658393959037: 
+Este valor es más pequeño que el de Lasso. 
+Indica que el modelo Ridge tiene un rendimiento superior en términos de ajuste a los datos de prueba. 
+Ridge es capaz de reducir aún más la varianza en comparación con Lasso.
+
+## Coeficientes Lasso: 
+Los coeficientes del modelo Lasso son [1.27832505, 0.94626719, 0.49712179, 0.54420218, 0.0, 0.18702965, 0.89819832].
+
+## Esto significa que Lasso ha reducido algunos coeficientes a cero, lo que implica que algunas características no están contribuyendo 
+significativamente a la predicción. 
+Las características con coeficientes diferentes de cero son las que Lasso considera más relevantes para la predicción.
+
+## Coeficientes Ridge: 
+Los coeficientes del modelo Ridge son [1.06916508, 0.97360654, 0.86465538, 0.83804516, 0.6480948, 0.74175414, 0.96148902].
+
+## Los coeficientes de Ridge son más pequeños en general que los de Lasso. 
+Ridge busca minimizar la magnitud de los coeficientes, lo que ayuda a reducir la varianza en el modelo.
+
+En resumen, estos resultados indican que Ridge está obteniendo el mejor rendimiento en términos de ajuste a los datos de prueba, 
+seguido de Lasso y luego el modelo de regresión lineal. 
