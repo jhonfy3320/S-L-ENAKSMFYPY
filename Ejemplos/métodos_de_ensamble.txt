@@ -1,0 +1,45 @@
+Los métodos de ensamble, también conocidos como técnicas de ensamble o ensemble groups en inglés, son un enfoque poderoso en el aprendizaje 
+automático que combina múltiples modelos más simples para crear un modelo más fuerte y preciso. 
+Estos métodos aprovechan las ventajas de diferentes algoritmos de aprendizaje para mejorar la precisión y el rendimiento general del modelo.
+
+El concepto clave detrás de los métodos de ensamblaje es que la combinación de varios modelos puede reducir el sesgo y la 
+varianza inherente a los modelos individuales. 
+Esto generalmente lleva a una mayor capacidad de generalización y una mayor resistencia a los valores atípicos y al ruido en los datos.
+
+## Hay dos tipos principales de métodos de conjunto: 
+conjunto basado en promedio y conjunto basado en incremento. Aquí hay una descripción general de cada uno:
+
+Ensamble basado en promedio: En este enfoque, varios modelos individuales se entrenan de manera independiente en diferentes subconjuntos 
+el conjunto de datos. Luego, las predicciones de cada modelo se promedian (en el caso de regresión) 
+o se toma la clase mayoritaria (en el caso de clasificación) para obtener la predicción final. 
+
+## Ejemplos de métodos de ensamblaje basados ​​en promedio incluyen Bagging y Random Forest.
+
+## Ensamble basado en incremento: 
+Aquí, se entrena una serie de modelos más simples secuencialmente, y cada nuevo modelo se enfoca en corregir los errores cometidos por los 
+modelos anteriores. 
+En cada iteración, los ejemplos que fueron mal clasificados por los modelos anteriores reciben más peso para que el nuevo modelo 
+se concentre en ellos. 
+Ejemplos de métodos de ensamblaje basados ​​en incremento incluyen AdaBoost y Gradient Boosting.
+
+Algunos ejemplos populares de métodos de conjunto incluyen:
+
+## Random Forest: 
+Un método basado en bagging que construye múltiples árboles de decisión y promedia sus predicciones.
+## AdaBoost: 
+Un método basado en incremento que asigna pesos a los ejemplos mal clasificados en cada iteración para corregir los errores en las predicciones.
+Aumento de gradiente: 
+similar a AdaBoost, pero en lugar de asignar pesos a los ejemplos, ajusta los nuevos modelos para minimizar el error residual de 
+los modelos anteriores.
+XGBoost y LightGBM: Implementaciones más eficientes de gradient boosting que utilizan técnicas avanzadas para mejorar el rendimiento.
+Voting Classifier/Regressor: 
+Un método de conjunto que combina las predicciones de varios modelos individuales usando votación mayoritaria (clasificación) 
+o promedio (regresión).
+En resumen, los métodos de ensamble son una estrategia efectiva para mejorar el rendimiento y la robustez de los modelos de 
+aprendizaje automático al aprovechar la diversidad y la combinación de varios modelos más simples.
+
+En resumen, los modelos ensamblados basados ​​en boosting, como AdaBoost, Gradient Tree Boosting y XGBoost, son enfoques poderosos para mejorar 
+la precisión y el rendimiento de los modelos de aprendizaje automático.
+Aprovechan la combinación secuencial de modelos más simples y 
+su capacidad para corregir errores anteriores o ajustarse a los residuos para lograr resultados más precisos en una variedad de tareas, 
+como clasificación y regresión.
